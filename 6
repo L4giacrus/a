@@ -1,0 +1,26 @@
+<p id="r"></p>
+<button onclick="j('pedra')">pedra</button>
+<button onclick="j('papel')">papel</button>
+<button onclick="j('tesoura')">tesoura</button>
+
+<script>
+o=["pedra","papel","tesoura"]
+u=0
+c=0
+
+j=x=>{
+
+m=o[Math.random()*3|0]
+
+if(x==m)r.innerHTML="empate"
+else if(
+(x=="pedra"&&m=="tesoura")||
+(x=="papel"&&m=="pedra")||
+(x=="tesoura"&&m=="papel")
+)u++
+else c++
+
+r.innerHTML="voce:"+u+" pc:"+c+"<br>"+x+" x "+m
+
+}
+</script>
