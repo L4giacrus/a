@@ -1,0 +1,21 @@
+<input id="a">
+<input id="b">
+
+<button onclick="c()">Calcular</button>
+
+<p id="r"></p>
+
+<script>
+function c(){
+
+a = Number(document.getElementById("a").value)
+b = Number(document.getElementById("b").value)
+
+document.getElementById("r").innerHTML =
+"Soma: " + (a+b) + "<br>" +
+"Subtração: " + (a-b) + "<br>" +
+"Multiplicação: " + (a*b) + "<br>" +
+"Divisão: " + (a/b)
+
+}
+</script>
