@@ -1,0 +1,24 @@
+<input id="v">
+<button onclick="c()">ok</button>
+<p id="r"></p>
+
+<script>
+c=_=>{
+
+x=v.value
+
+a=x/100|0;x%=100
+b=x/50|0;x%=50
+c=x/20|0;x%=20
+d=x/10|0;x%=10
+e=x/5|0
+
+r.innerHTML=
+(a?100+"x"+a+" ":"")+
+(b?50+"x"+b+" ":"")+
+(c?20+"x"+c+" ":"")+
+(d?10+"x"+d+" ":"")+
+(e?5+"x"+e:"")
+
+}
+</script>
